@@ -11,6 +11,8 @@ Inspired by [mooki000/hookshot-workbench](https://github.com/mooki000/hookshot-w
 3. Check [docs/TASKS.md](docs/TASKS.md) and the linked issues/PRs for overlap.
 4. Record completed work in [docs/WORKLOG.md](docs/WORKLOG.md), and update CURRENT and TASKS when their status changes.
 
+On Rogasse's Windows PC, the local Codex workspace has an `AGENTS.md` pointer to this repository, and `skills/hookshot-context` is linked into the local Codex skills folder. Those local links help a new Hookshot session discover this context; the repository remains the canonical copy.
+
 ## Boundaries
 
 This repository contains no game files, saves, keys, binaries, generated code, shader caches, logs, options file, credentials, or private local paths. Keep run artifacts on the PC. Publish only summaries and evidence allowed by Hookshot's contribution rules. Verify that `gh api user --jq .login` returns `Rogasse` before any GitHub write.

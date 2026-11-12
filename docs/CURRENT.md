@@ -15,7 +15,7 @@ Updated: 2026-11-12 (America/Santo_Domingo).
 - Windows 11 Home, build 26200; Intel Core i5-13420H; 32 GB RAM; NVIDIA GeForce RTX 4050 Laptop GPU, 6 GB VRAM.
 - Current NVIDIA driver observed on 2026-11-12: 621.14. The existing play logs were produced with driver 616.92.
 - Installed Hookshot: v2.1.0, source `633eb435`, renderer API 14. The current upstream `main` was API 19 when checked; its DLL cannot simply replace this installed game's DLL.
-- C: had about 20 GB free when work began, below the roughly 60 GB that Hookshot documents for a full source build. Only the Vulkan renderer is being built in the separate source checkout.
+- C: had 17.2 GiB free on 2026-11-12, below the roughly 60 GB that Hookshot documents for a full source build. Only the Vulkan renderer has been built in the separate v2.1.0 source checkout.
 
 ## Evidence and limits
 
@@ -45,5 +45,5 @@ Updated: 2026-11-12 (America/Santo_Domingo).
 ## Upstream contribution opportunity (checked 2026-11-12)
 
 - The latest release is still v2.1.0. The installed game has renderer API 14; the newer PR renderer cannot be copied into it without a compatible game build. The full build requires about 60 GB free per upstream's contribution guide, while the last observed C: free space was about 16 GB. Do not claim or report a PR as tested on this installation.
-- [PR #2834](https://github.com/NotRexed/Hookshot/pull/2834) is open and targets real 6 GB cards. Its author measured an RTX 3060 Laptop 6 GB on Windows; the RTX 4050 would add a different real card. [PR #2794](https://github.com/NotRexed/Hookshot/pull/2794) is open and opt-in; its 6 GB result comes from a 12 GB card with an artificial allowance, so real 6 GB evidence would be particularly useful. Both need a current compatible build and a reproducible same-scene route.
+- [PR #2834](https://github.com/NotRexed/Hookshot/pull/2834) is open and targets real 6 GB cards. Its 2026-11-12 head `14b92e2` raises the Auto and Low preset mirror allowance to 1536 MB on 6 GB cards, while capping presets on smaller cards. The two focused game-free tests passed locally against the same source blobs; this verifies the rule, not gameplay performance. A broad source-suite attempt had 216 passes, 129 failures, and 178 skips, primarily because this Windows environment lacks required compilers/runtime DLLs and a .NET SDK; it cannot serve as a clean source-suite result. No in-game #2834 A/B has been run on this RTX 4050. The author measured an RTX 3060 Laptop 6 GB on Windows; this machine would add a different real card after a compatible full build. [PR #2794](https://github.com/NotRexed/Hookshot/pull/2794) is open and opt-in; its 6 GB result comes from a 12 GB card with an artificial allowance.
 - The prior long Kokiri walk diverged between launches. For a future A-B-A-B comparison, isolate the save, use a repeatable scene or fixed camera, consider `HOS_REALTIME_STEP=0` as in #2834's method, keep frame generation off while measuring real game FPS, and report raw per-run spread and long frames. No upstream PR test request has been claimed or posted from this PC.

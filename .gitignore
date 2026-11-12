@@ -1,0 +1,39 @@
+# Local runs and machine state
+local/
+runs/
+reports/raw/
+work/
+build/
+*.log
+hookshot_log*.txt
+hookshot_options.ini
+hookshot_env.txt
+*.ini
+.env*
+*.token
+*credential*
+
+# Game and build artifacts
+romfs/
+exefs/
+user/
+saves/
+*.nup
+*.nso
+*.nca
+*.nsp
+*.xci
+*.nsz
+*.xcz
+*.bin
+*.idx
+*.dll
+*.exe
+*.zip
+*.rar
+
+# Python/editor noise
+__pycache__/
+*.pyc
+.venv/
+.vscode/

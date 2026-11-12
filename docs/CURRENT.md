@@ -5,6 +5,7 @@ Updated: 2026-11-12 (America/Santo_Domingo).
 ## Accounts and project
 
 - Upstream: [NotRexed/Hookshot](https://github.com/NotRexed/Hookshot).
+- This public context repository: [Rogasse/hookshot-workbench](https://github.com/Rogasse/hookshot-workbench), `main`.
 - GitHub publication identity: `Rogasse` (verified with `gh api user --jq .login` on 2026-11-12). Recheck before every write.
 - Hookshot team chat identity: `@rogasse:magicbean.dev` (verified with `python -I scripts/team_chat.py whoami`). No automatic updates enabled.
 - Public performance report, posted as Rogasse: [issue #993 comment](https://github.com/NotRexed/Hookshot/issues/993#issuecomment-6826001011). An earlier comment from the wrong account was deleted.

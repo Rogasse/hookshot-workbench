@@ -4,6 +4,7 @@ Append a dated entry after a meaningful result. Keep each entry factual and link
 
 ## 2026-11-12 — Setup and 6 GB baseline
 
+- Created the public [Rogasse/hookshot-workbench](https://github.com/Rogasse/hookshot-workbench) repository for durable Windows-specific Hookshot context. Its first commit contains only documentation and a `.gitignore` for game/build artifacts. A local workspace `AGENTS.md` points Hookshot sessions to this repository.
 - Read upstream `AGENTS.md`, `CONTRIBUTING.md`, `docs/workflow.md`, and the ranked worklist. Read mooki000's public workbench README and measurement/evidence guides for method, adapting for Windows.
 - Verified the intended GitHub account `Rogasse`; deleted the accidentally posted `MecaprojectRD` issue comment and [reposted the baseline as Rogasse](https://github.com/NotRexed/Hookshot/issues/993#issuecomment-6826001011).
 - Signed into the Hookshot team chat through Discord; `whoami` returned `@rogasse:magicbean.dev`. No team message or automatic update was sent.

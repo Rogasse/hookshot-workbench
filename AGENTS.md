@@ -1,13 +1,13 @@
-# Working on Hookshot for Rogasse
+# Working on Hookshot and Longshot for Rogasse
 
 Read `README.md`, `docs/CURRENT.md`, `docs/TASKS.md`, and the newest entry in `docs/WORKLOG.md` before starting. This repository is the handoff point between sessions. Update those files after a meaningful result; record dates, pinned versions, commands, evidence, and remaining work. Distinguish observation, inference, and a measured before/after result.
 
-Before working in upstream Hookshot, read its current `docs/workflow.md`, `AGENTS.md`, `CONTRIBUTING.md`, and development guide. Upstream rules take precedence for source contributions. Search existing issues and PRs before starting a fix. Run the relevant source check and full test suite before a PR; a performance claim also needs repeated same-scene runs on the game.
+For new Longshot work, read its current [AGENTS.md](https://git.magicbean.dev/MagicBeanDev/Longshot/src/branch/main/AGENTS.md), [CONTRIBUTING.md](https://git.magicbean.dev/MagicBeanDev/Longshot/src/branch/main/CONTRIBUTING.md), workflow and development guide. Their rules take precedence for Longshot contributions. Search and claim work before starting, run the local full test suite, and measure performance changes in repeated same-scene runs. For historical Hookshot follow-ups, read that repository's current instructions separately.
 
 ## Identity and public posts
 
-- GitHub publications must come from `Rogasse`. Check the active identity with `gh api user --jq .login` immediately before writing. Stop if it differs.
-- The Hookshot team chat account is `@rogasse:magicbean.dev`, accessed through Discord. GitHub and team chat are separate sessions. A saved chat login does not authorize automatic posting.
+- GitHub publications must come from `Rogasse`. Check the active identity with `gh api user --jq .login` immediately before writing. Stop if it differs. Longshot uses Forgejo and its own Discord-backed sign-in; verify that account before any Forgejo post.
+- The earlier team chat account was `@rogasse:magicbean.dev`, accessed through Discord. GitHub and the Longshot Forgejo/team-chat sessions are separate. A saved login does not authorize automatic posting.
 - Use plain English for upstream reports. State what was measured and what was not. Never claim that a switch or PR improves FPS from a single run or from the player's baseline log alone.
 
 ## Data boundaries

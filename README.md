@@ -1,13 +1,13 @@
 # Rogasse's Hookshot workbench
 
-Public notes and repeatable methods for testing and contributing to [Hookshot](https://github.com/NotRexed/Hookshot) from a Windows PC with an RTX 4050 Laptop GPU (6 GB). This repository records what was observed, what remains unproven, and the next useful test. It is independent of the Hookshot project.
+Public notes and repeatable methods for testing [Hookshot](https://github.com/NotRexed/Hookshot) and its [Longshot continuation](https://git.magicbean.dev/MagicBeanDev/Longshot) from a Windows PC with an RTX 4050 Laptop GPU (6 GB). This repository records what was observed, what remains unproven, and the next useful test. It is independent of both projects.
 
 Inspired by [mooki000/hookshot-workbench](https://github.com/mooki000/hookshot-workbench). Its Linux scripts and machine-specific paths are not copied here. The comparison and evidence principles are adapted to this PC.
 
 ## Start here
 
 1. Read [AGENTS.md](AGENTS.md), then [docs/CURRENT.md](docs/CURRENT.md).
-2. Read Hookshot's current [workflow](https://github.com/NotRexed/Hookshot/blob/main/docs/workflow.md), [AGENTS.md](https://github.com/NotRexed/Hookshot/blob/main/AGENTS.md), and [CONTRIBUTING.md](https://github.com/NotRexed/Hookshot/blob/main/CONTRIBUTING.md) before changing its source.
+2. For new Longshot work, read its current [workflow](https://git.magicbean.dev/MagicBeanDev/Longshot/src/branch/main/docs/workflow.md), [AGENTS.md](https://git.magicbean.dev/MagicBeanDev/Longshot/src/branch/main/AGENTS.md), and [CONTRIBUTING.md](https://git.magicbean.dev/MagicBeanDev/Longshot/src/branch/main/CONTRIBUTING.md). For historical Hookshot work, read Hookshot's own instructions.
 3. Check [docs/TASKS.md](docs/TASKS.md) and the linked issues/PRs for overlap.
 4. Record completed work in [docs/WORKLOG.md](docs/WORKLOG.md), and update CURRENT and TASKS when their status changes.
 
@@ -15,7 +15,7 @@ On Rogasse's Windows PC, the local Codex workspace has an `AGENTS.md` pointer to
 
 ## Boundaries
 
-This repository contains no game files, saves, keys, binaries, generated code, shader caches, logs, options file, credentials, or private local paths. Keep run artifacts on the PC. Publish only summaries and evidence allowed by Hookshot's contribution rules. Verify that `gh api user --jq .login` returns `Rogasse` before any GitHub write.
+This repository contains no game files, saves, keys, binaries, generated code, shader caches, logs, options file, credentials, or private local paths. Keep run artifacts on the PC. Publish only summaries and evidence allowed by the destination project's rules. Verify that `gh api user --jq .login` returns `Rogasse` before any GitHub write.
 
 ## Current focus
 

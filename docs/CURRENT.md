@@ -4,11 +4,18 @@ Updated: 2026-11-13 (America/Santo_Domingo).
 
 ## Accounts and project
 
-- Upstream: [NotRexed/Hookshot](https://github.com/NotRexed/Hookshot).
+- Historical upstream for reports in this workbench: [NotRexed/Hookshot](https://github.com/NotRexed/Hookshot). The team that posted the transition now works on [MagicBeanDev/Longshot](https://git.magicbean.dev/MagicBeanDev/Longshot), whose README calls it a continuation and says the top maintainers moved. Hookshot's GitHub repository was still unarchived and had fresh commits when checked on 2026-11-13; the team's move does not imply that repository was deleted.
 - This public context repository: [Rogasse/hookshot-workbench](https://github.com/Rogasse/hookshot-workbench), `main`.
 - GitHub publication identity: `Rogasse` (verified with `gh api user --jq .login` on 2026-11-12). Recheck before every write.
 - Hookshot team chat identity: `@rogasse:magicbean.dev` (verified with `python -I scripts/team_chat.py whoami`). No automatic updates enabled.
 - Public performance report, posted as Rogasse: [issue #993 comment](https://github.com/NotRexed/Hookshot/issues/993#issuecomment-6826001011). An earlier comment from the wrong account was deleted.
+
+## Longshot transition (checked 2026-11-13)
+
+- The [Longshot repository](https://git.magicbean.dev/MagicBeanDev/Longshot) and its [README](https://git.magicbean.dev/MagicBeanDev/Longshot/src/branch/main/README.md) identify it as a Hookshot continuation. The team points contributors to [its Discord](https://discord.gg/KX99srmQTe); claims belong in `#dev-work`. Existing Hookshot reports and PRs remain historical evidence; link them with full GitHub URLs in Longshot discussions, never bare `#` numbers.
+- Read Longshot's current [CONTRIBUTING.md](https://git.magicbean.dev/MagicBeanDev/Longshot/src/branch/main/CONTRIBUTING.md), [AGENTS.md](https://git.magicbean.dev/MagicBeanDev/Longshot/src/branch/main/AGENTS.md), and [workflow](https://git.magicbean.dev/MagicBeanDev/Longshot/src/branch/main/docs/workflow.md). Forgejo sign-in goes through `python -I scripts/forge.py login` and Discord approval; no Forgejo identity has been verified for this work and no Longshot checkout has been created here yet. Before a fix, read the current worklist, check existing issues/PRs and team chat, claim it, then test and measure it locally. Longshot PRs use a fork and open as WIP until the required evidence is complete.
+- [Longshot v3.0.0-rc.2](https://git.magicbean.dev/MagicBeanDev/Longshot/releases/tag/v3.0.0-rc.2) and [Launcher v1.0.0-rc.2](https://git.magicbean.dev/MagicBeanDev/LongshotLauncher/releases/tag/v1.0.0-rc.2) were verified in the official Forgejo release pages. The [save guide](https://git.magicbean.dev/MagicBeanDev/Longshot/src/branch/main/docs/saves.md) says the launcher can import Hookshot saves, backs up the Longshot save it replaces, and leaves Hookshot's files untouched; import replaces the destination slots rather than merging them. The current installed game is still Hookshot; no Longshot build or save migration has been attempted.
+- The strict data boundary remains: no game files, keys, dumps, generated game code, game binaries, saves, options or caches in Git or team chat. For a performance PR, use same-scene interleaved runs, include log lines and hardware details, and run `python -I -B tests/run_all.py` before review.
 
 ## Machine and installed game
 

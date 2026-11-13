@@ -1,6 +1,6 @@
 # Rogasse's Hookshot workbench
 
-Public notes and repeatable methods for testing [Hookshot](https://github.com/NotRexed/Hookshot) and its [Longshot continuation](https://git.magicbean.dev/MagicBeanDev/Longshot) from a Windows PC with an RTX 4050 Laptop GPU (6 GB). This repository records what was observed, what remains unproven, and the next useful test. It is independent of both projects.
+Public notes and repeatable methods for testing [Hookshot](https://github.com/NotRexed/Hookshot) and the separate [Longshot fork](https://git.magicbean.dev/MagicBeanDev/Longshot) from a Windows PC with an RTX 4050 Laptop GPU (6 GB). This repository records what was observed, what remains unproven, and the next useful test. It is independent of both projects.
 
 Inspired by [mooki000/hookshot-workbench](https://github.com/mooki000/hookshot-workbench). Its Linux scripts and machine-specific paths are not copied here. The comparison and evidence principles are adapted to this PC.
 

@@ -100,4 +100,9 @@ Append a dated entry after a meaningful result. Keep each entry factual and link
 
 - The official Longshot Launcher v1.0.0-rc.2 built Longshot v3.0.0-rc.2 on this Windows PC, with shader preparation complete. A short first start logged the release version and no error-like lines; this is a start-up check, not a gameplay or performance test.
 - Imported six normal save slots using Longshot's save script and verified their files against Hookshot by SHA-256. Preserved 15 separate testing profiles and an untouched archive of all 16 save sets locally. No save, game file or cache was published.
-- Rogasse supplied later Discord announcements stating that NotRexed intends to continue Hookshot and that Longshot is not an official Rexed port. The old GitHub repository returned HTTP 404 when checked later that day. Treat the projects separately; do not infer that Hookshot development has ended. Hookshot remains installed pending Rogasse's choice.
+- Rogasse supplied later Discord announcements stating that NotRexed intends to continue Hookshot and that Longshot is not an official Rexed port. The old GitHub repository returned HTTP 404 when checked later that day. Treat the projects separately; do not infer that Hookshot development has ended. Rogasse chose to retain Hookshot.
+
+## 2026-11-13 — Updated Longshot in place to rc.3
+
+- Verified the official rc.3 builder ZIP against its release SHA-256 and used `LongshotBuilder.exe --cli --update` on the existing game folder. The build and shader preparation completed with exit code 0. A short start logged `v3.0.0-rc.3` and no error-like lines; this does not test gameplay or FPS.
+- Verified all 14 files in the six normal save slots against the untouched local archive by SHA-256 after the update. The 15 separate testing profiles remain preserved. The launcher's build record was corrected to show rc.3 in the original folder. Hookshot remains installed by Rogasse's choice.

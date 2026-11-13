@@ -106,3 +106,8 @@ Append a dated entry after a meaningful result. Keep each entry factual and link
 
 - Verified the official rc.3 builder ZIP against its release SHA-256 and used `LongshotBuilder.exe --cli --update` on the existing game folder. The build and shader preparation completed with exit code 0. A short start logged `v3.0.0-rc.3` and no error-like lines; this does not test gameplay or FPS.
 - Verified all 14 files in the six normal save slots against the untouched local archive by SHA-256 after the update. The 15 separate testing profiles remain preserved. The launcher's build record was corrected to show rc.3 in the original folder. Hookshot remains installed by Rogasse's choice.
+
+## 2026-11-13 — Chose the next 6 GB test
+
+- Checked the current Longshot releases, worklist, test requests, team updates, and open performance issues. rc.3 remains the latest release candidate. The high-priority memory-growth/FPS-fade row (score 5.6) is still open; another tester has a distinct 10 GB Windows run. [Issue 89](https://git.magicbean.dev/MagicBeanDev/Longshot/issues/89) explicitly asks for a matched direct-load versus post-area route, so the next local test is a short Market direct-load versus Hyrule Field → Market comparison before a longer memory tour.
+- Confirmed the installed rc.3 log reports no DLSS in this build. Keep the first route test on the game's own upscaler and describe that limit; a DLSS-toggle test needs a restored SDK-enabled build. No new gameplay measurement or upstream post was made during this review.

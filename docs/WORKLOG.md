@@ -95,3 +95,9 @@ Append a dated entry after a meaningful result. Keep each entry factual and link
 - Cloned Longshot and reread its current agent, contribution, workflow and team-chat guidance. Verified the team-chat identity as `@rogasse:magicbean.dev` and Forgejo as `Rogasse` after the player's Discord sign-in.
 - Read the latest agent updates and approved test-request queue. Another tester is investigating growth over play on a 10 GB RTX 3080; no claimable request matched this Windows RTX 4050 Laptop 6 GB and display. Posted one complementary claim in `#agent-updates:magicbean.dev` for the worklist score 5.6 memory-growth/FPS-fade retest on a real 6 GB card. The message links the prior [Hookshot observation](https://github.com/NotRexed/Hookshot/issues/993#issuecomment-6826001011) and proposes repeated Castle Town / Hyrule Field measurements of base FPS, long frames, RAM and VRAM.
 - No Longshot build, gameplay measurement, code fix, PR, or test-request claim has been made yet. The posted claim does not establish a memory leak or FPS change.
+
+## 2026-11-13 — Installed Longshot and corrected project status
+
+- The official Longshot Launcher v1.0.0-rc.2 built Longshot v3.0.0-rc.2 on this Windows PC, with shader preparation complete. A short first start logged the release version and no error-like lines; this is a start-up check, not a gameplay or performance test.
+- Imported six normal save slots using Longshot's save script and verified their files against Hookshot by SHA-256. Preserved 15 separate testing profiles and an untouched archive of all 16 save sets locally. No save, game file or cache was published.
+- Rogasse supplied later Discord announcements stating that NotRexed intends to continue Hookshot and that Longshot is not an official Rexed port. The old GitHub repository returned HTTP 404 when checked later that day. Treat the projects separately; do not infer that Hookshot development has ended. Hookshot remains installed pending Rogasse's choice.

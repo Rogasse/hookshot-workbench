@@ -2,6 +2,11 @@
 
 Append a dated entry after a meaningful result. Keep each entry factual and link the public record. Do not paste private local paths or raw game data.
 
+## 2026-11-14 — PR #526 late-fix-on/off follow-up in Zora
+
+- In the same isolated Windows RTX 4050 PR build with frame generation off, the player saw no black flash during an approximately two-minute `RX_VK_LATE_FIX=0` run in Zora's Fountain. After restoring the original environment file, a roughly five-minute late-fix-on run showed one mild black flash, subjectively much less frequent than earlier nightly play. The camera paths and observation lengths were not identical; no rate or absolute absence is claimed.
+- The on-run log completed six late-fix summaries with 1,072 CPU-first reads, zero earlier-part waits and zero fallback copies. Both runs reached Zora and closed normally. The original environment file in the isolated PR copy was restored and hash-checked; the normal installation kept its workaround. [Reported the qualified result on PR #526](https://git.magicbean.dev/MagicBeanDev/Longshot/pulls/526#issuecomment-20467) as Rogasse. Mooki separately returned the PR to WIP and is preparing per-path counters, particularly for the write-back shadow; no game data or raw logs were uploaded.
+
 ## 2026-11-14 — Windows RTX 4050 visual test of Longshot PR #526
 
 - Built main `543846ebb` (nightly 145) from the local game files on Windows 11 Home build 26200, RTX 4050 Laptop 6 GB, NVIDIA 621.14, 32 GB RAM. The base build took 1:09:10 with two compiler jobs; a renderer-only `dev_packs.py pack` of PR #526 at pinned pre-rebase commit `4610ffdda` took 108 seconds. The three renderer source files remained unchanged after the PR rebased to `fea96c39c`. `python -I -B tests/test_late_fix_build.py --cxx <bundled clang++>` passed on the pinned PR source. This was not a full build of the rebased head; no full local game-free suite was run.

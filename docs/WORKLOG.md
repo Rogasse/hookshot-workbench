@@ -2,6 +2,11 @@
 
 Append a dated entry after a meaningful result. Keep each entry factual and link the public record. Do not paste private local paths or raw game data.
 
+## 2026-11-14 — PR #324 excluded as a requirement; shadow path still a lead
+
+- On the installed Nightly 127, with frame generation off and sparse mirrors off, Link's near-black Zora flicker continued with `RX_VK_LATE_FIX=1` and all three PR #324 old-behaviour switches set together (`HOS_MEMINFO_OLD=1`, `HOS_HEAP_COMMIT=1`, `RX_VK_IMPORT_HIGH=0`). [Initial and result comments on PR #324](https://git.magicbean.dev/MagicBeanDev/Longshot/pulls/324#issuecomment-18717). The team's broader Windows testing also withdrew #324 as the cause.
+- With those settings held, a short run with `RX_VK_SHADOW_FOLLOWS_SYNC=0` showed no flicker to the player. A longer run with the default shadow sync restored produced intermittent flicker when the camera moved; it was not continuous. The camera motion and test lengths were not matched, so this does not prove the copy operation is defective or that disabling it is safe. [Qualified update on issue #366](https://git.magicbean.dev/MagicBeanDev/Longshot/issues/366#issuecomment-18791). The original environment-file bytes were restored after the runs, leaving `RX_VK_LATE_FIX=0` for normal launches. Three raw run logs were preserved locally outside this public repository. No source patch or exact-line finding.
+
 ## 2026-11-14 — Nightly 127 black flicker isolated to the late-pages path
 
 - In Zora's Fountain on Longshot `nightly-127-cf605c85`, RTX 4050 Laptop 6 GB, Windows 11, Link and nearby scene pixels darkened for isolated frames. A 20-second local video shows the event around 0:08 and again around 0:14. The full video stayed local; a three-frame screenshot was attached to the report.

@@ -2,6 +2,12 @@
 
 Append a dated entry after a meaningful result. Keep each entry factual and link the public record. Do not paste private local paths or raw game data.
 
+## 2026-11-14 — Nightly 127 black flicker isolated to the late-pages path
+
+- In Zora's Fountain on Longshot `nightly-127-cf605c85`, RTX 4050 Laptop 6 GB, Windows 11, Link and nearby scene pixels darkened for isolated frames. A 20-second local video shows the event around 0:08 and again around 0:14. The full video stayed local; a three-frame screenshot was attached to the report.
+- With frame generation off, the player still saw the flicker. In the same location and with the same settings, the default renderer showed it, a 1–2 minute session launched with `RX_VK_LATE_FIX=0` did not, and the default renderer showed it again. This A-B-A observation implicates the GPU late-pages path added by [Longshot PR #248](https://git.magicbean.dev/MagicBeanDev/Longshot/pulls/248); it does not identify the faulty statement or quantify the path's performance cost.
+- The PR description says an earlier version of this path made per-character animation flash black and that a wrong capture word would appear as a one-frame artifact. The current repository had no subsequent change to its shader as of this check. A local `longshot_env.txt` switch disables the path on the next game start; the currently running game was not interrupted. The A-B-A, a three-frame screenshot, relevant log lines and source lead were [posted as Rogasse on Longshot issue #366](https://git.magicbean.dev/MagicBeanDev/Longshot/issues/366#issuecomment-18628), rather than opening a duplicate issue. No source fix was claimed.
+
 ## 2026-11-12 — Setup and 6 GB baseline
 
 - Created the public [Rogasse/hookshot-workbench](https://github.com/Rogasse/hookshot-workbench) repository for durable Windows-specific Hookshot context. Its first commit contains only documentation and a `.gitignore` for game/build artifacts. A local workspace `AGENTS.md` points Hookshot sessions to this repository.

@@ -2,6 +2,11 @@
 
 Append a dated entry after a meaningful result. Keep each entry factual and link the public record. Do not paste private local paths or raw game data.
 
+## 2026-11-15 — Nightly 189 exploratory Castle Town run
+
+- Installed Nightly 189 was played in Castle Town Market on a Windows RTX 4050 Laptop 6 GB. Frame Generation was off for the first phases. The initial setting averaged 18.3 real game FPS over twelve five-second windows (13.0–23.9); lowering internal resolution alone averaged 17.0 over twelve (13.5–24.4). The game's upscaler with dynamic internal resolution averaged 21.7 over twenty (14.2–25.3); with x2 Frame Generation it averaged 19.4 real game FPS over eight (16.1–25.1).
+- The driver's VRAM allowance was around 4.8–5.0 GB; sampled use peaked at 5.32 GB, and textures exceeded their budget. Route, camera and memory state changed, so these are observations rather than an A/B result or evidence of an effect from [#735](https://git.magicbean.dev/MagicBeanDev/Longshot/pulls/735). A matched main-versus-[#771](https://git.magicbean.dev/MagicBeanDev/Longshot/pulls/771) run through Hyrule Field to Market remains the useful follow-up when its testing request is available. No upstream report was posted.
+
 ## 2026-11-15 — Hookshot resumed on Forgejo; release channels checked
 
 - NotRexed's [Hookshot repository](https://git.notrexed.dev/Hookshot/Hookshot) is active on Forgejo after the GitHub repository stopped responding. The original project published stable [v2.3.0](https://git.notrexed.dev/Hookshot/Hookshot/releases/tag/v2.3.0) and [v2.3.1](https://git.notrexed.dev/Hookshot/Hookshot/releases/tag/v2.3.1) on 2026-11-15. v2.3.0 lists render-thread, pipeline-preparation, VRAM and builder improvements; v2.3.1 fixes Windows Builder discovery stalls and Linux build errors. The local Hookshot installation is still v2.2.0-rc.1; no update was made.

@@ -2,6 +2,12 @@
 
 Append a dated entry after a meaningful result. Keep each entry factual and link the public record. Do not paste private local paths or raw game data.
 
+## 2026-11-15 — Hookshot resumed on Forgejo; release channels checked
+
+- NotRexed's [Hookshot repository](https://git.notrexed.dev/Hookshot/Hookshot) is active on Forgejo after the GitHub repository stopped responding. The original project published stable [v2.3.0](https://git.notrexed.dev/Hookshot/Hookshot/releases/tag/v2.3.0) and [v2.3.1](https://git.notrexed.dev/Hookshot/Hookshot/releases/tag/v2.3.1) on 2026-11-15. v2.3.0 lists render-thread, pipeline-preparation, VRAM and builder improvements; v2.3.1 fixes Windows Builder discovery stalls and Linux build errors. The local Hookshot installation is still v2.2.0-rc.1; no update was made.
+- The separate Longshot fork has [v3.0.0-rc.4](https://git.magicbean.dev/MagicBeanDev/Longshot/releases/tag/v3.0.0-rc.4), [Nightly 189](https://git.magicbean.dev/MagicBeanDev/Longshot/releases/tag/nightly-189-aa95d35f), and [Launcher rc.6](https://git.magicbean.dev/MagicBeanDev/LongshotLauncher/releases/tag/v1.0.0-rc.6) available. Local Longshot remains Nightly 170 with Launcher rc.4 and a separate PR #526 test copy. PR #526 remained open and unmerged at this check; no newer Longshot build was installed.
+- The two old Nightly 164 game folders and the older Longshot game folder were no longer present in the local Games inventory. About 72 GiB was free on C:. Shared saves and the verified old-save backup were left intact. No gameplay or FPS comparison was made in this status check.
+
 ## 2026-11-14 — Nightly 170 and isolated PR #526 test build
 
 - Installed Launcher rc.4 with Builder for `nightly-170-6c9edffe`. The Launcher finished the build, prepared shaders, registered Nightly 170 as its only managed/default build, and started the game. This is an installation check, not a performance comparison.
